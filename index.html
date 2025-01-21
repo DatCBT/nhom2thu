@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm 2 - Lớp 12 Hóa</title>
+    <style>
+        /* Đặt nền cho trang web */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d8f3d8; /* Nền màu xanh nhạt như rừng */
+            color: #333;
+            background-image: url('https://cdn.pixabay.com/photo/2016/08/18/16/43/forest-1608155_960_720.jpg'); /* Hình nền rừng xanh */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        /* Định dạng header */
+        header {
+            background-color: rgba(56, 142, 60, 0.8); /* Màu xanh lá cây đậm trong suốt */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        /* Định dạng phần giới thiệu thành viên */
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .member {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Khi hover vào thành viên */
+        .member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Định dạng hình ảnh thành viên */
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        /* Định dạng tên thành viên */
+        .member h2 {
+            color: #388e3c;
+            margin: 10px 0;
+            font-size: 1.3rem;
+        }
+
+        /* Định dạng chức vụ và chuyên môn */
+        .member p {
+            color: #555;
+            margin: 5px 0;
+        
+
+        @keyframes fly {
+            0% { left: -50px; top: 20%; }
+            50% { left: 50%; top: 10%; }
+            100% { left: 100%; top: 20%; }
+        
+
+        @keyframes bloom {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Hiệu ứng cây cối */
+        .tree {
+            position: absolute;
+            bottom: 10%;
+            right: 5%;
+            width: 80px;
+            height: 120px;
+            background-color: #228B22;
+            border-radius: 10px 10px 0 0;
+            animation: sway 6s ease-in-out infinite;
+        }
+
+        .tree::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            width: 60%;
+            height: 60%;
+            background-color: #2E8B57;
+            border-radius: 50%;
+            animation: swayLeaves 6s ease-in-out infinite;
+        }
+
+        @keyframes sway {
+            0% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+            100% { transform: rotate(-3deg); }
+        }
+
+        @keyframes swayLeaves {
+            0% { transform: rotate(-2deg); }
+            50% { transform: rotate(2deg); }
+            100% { transform: rotate(-2deg); }
+        }
+
+        /* Định dạng footer */
+        footer {
+            background-color: rgba(56, 142, 60, 0.8);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nhóm 2 - Lớp 12 Hóa</h1>
+    </header>
+
+    <!-- Thêm hình chim bay qua -->
+    <div class="bird"></div>
+    
+    <!-- Thêm bông hoa nở -->
+    <div class="flower"></div>
+
+    <!-- Thêm cây cối chuyển động -->
+    <div class="tree"></div>
+
+    <section class="team">
+        <div class="member">
+            <a href="https://datcbt.github.io/HY" target="_blank">
+                <h2>Phạm Quang Đạt</h2>
+            </a>
+        </div>
+        <div class="member">
+            <a href="https://datcbt.github.io/QD" target="_blank">
+                <h2>Trần Thị Hải Yến</h2>
+            </a>
+        </div>
+        <div class="member">
+            <a href="https://datcbt.github.io/PST" target="_blank">
+                <h2>Phan Song Thuận</h2>
+            </a>
+        </div>
+        <div class="member">
+            <a href="https://datcbt.github.io/TTTP/" target="_blank">
+                <h2>Trương Thụy Trường Phúc</h2>
+            </a>
+        </div>
+        <div class="member">
+            <a href="https://datcbt.github.io/NNPK/" target="_blank">
+                <h2>Nguyễn Hữu Phúc Khang</h2>
+            </a>
+        </div>
+        <div class="member">
+            <a href="https://datcbt.github.io/HCH/" target="_blank">
+                <h2>Huỳnh Chí Hiếu</h2>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
